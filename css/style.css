@@ -97,8 +97,14 @@
     right: 8%;
     bottom: 0;
 }
+.card-content-title{
+    font-size:3rem;
+    color: #ececec;
+    
+    left: 38%;
+}
 .card .card-content{
-    padding: 30px;
+    padding: 20px 40px;
 }
 .card .card-content .btn-more{
     height: 50px;
@@ -193,6 +199,15 @@
     background-color: #fff;
     transition: all 2s linear;
 }
+.menu.show{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #fff;
+    transition: all 2s linear;
+}
 .coffee-card{
     display: flex;
     flex-direction: column;
@@ -201,7 +216,6 @@
     width: 280px;
     background-color: #000;
     margin: 40px;
-    
     box-shadow: rgba(0, 0, 0, 0.9) 10px 15px 35px;
 }
 .coffee-card img{
@@ -232,7 +246,7 @@
     }
     .card .card-content .btn-more{
         position: absolute;
-        top: 235px;
+        top: 300px;
     }
     .contact img{
         width: 350px;

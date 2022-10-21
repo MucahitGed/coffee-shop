@@ -6,13 +6,15 @@ const contact_phone = document.querySelector("#contact .form-control #phone")
 const menu = document.querySelector(".menu");
 const menu_btn = document.querySelector(".menu-btn");
 
-
+menu_btn.innerHTML = 'Menu'
 menu_btn.addEventListener("click" , ()=>{
-    if(menu.style.display === "none"){
-        menu.style.display = "flex";
+    menu.classList.toggle('show')
+    if(menu_btn.innerHTML == 'Menu'){
+        menu_btn.innerHTML = 'Close'
     }else{
-        menu.style.display = "none"
+        menu_btn.innerHTML = 'Menu'
     }
+    
 })
 
 submit_btn.addEventListener("click" , ()=> {
